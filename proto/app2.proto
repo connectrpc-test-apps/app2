@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package app2.v1;
+
+service Checker {
+  rpc Verify (VerifyRequest) returns (VerifyResponse);
+}
+
+message VerifyRequest {
+  string type = 1;
+  string code = 2;
+}
+
+message VerifyResponse {
+  bool valid = 1;
+}

@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "name": "app2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --env-file .env.example index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@bufbuild/buf": "^1.31.0",
+    "@bufbuild/protobuf": "^1.9.0",
+    "@bufbuild/protoc-gen-es": "^1.9.0",
+    "@connectrpc/connect": "^1.4.0",
+    "@connectrpc/connect-node": "^1.4.0",
+    "@connectrpc/protoc-gen-connect-es": "^1.4.0"
+  }
+}

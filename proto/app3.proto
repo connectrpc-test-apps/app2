@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package app3.v1;
+
+service CodeChecker {
+  rpc PrintAndCheckIsCodeValid (CodeRequest) returns (CodeResponse);
+}
+
+message CodeRequest {
+  string code = 1;
+}
+
+message CodeResponse {
+  bool valid = 1;
+}
